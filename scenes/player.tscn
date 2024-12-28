@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bqpon0jwgwh0v"]
 
-[ext_resource type="Script" path="res://scenes/player.cs" id="1_0jopw"]
 [ext_resource type="Texture2D" uid="uid://by0vxaq5xktjp" path="res://brackeys_platformer_assets/sprites/knight.png" id="1_0xwf8"]
+[ext_resource type="Script" path="res://scripts/player.cs" id="1_yoxpk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_50rg5"]
 atlas = ExtResource("1_0xwf8")
@@ -43,7 +43,8 @@ animations = [{
 radius = 7.0
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_0jopw")
+z_index = 5
+script = ExtResource("1_yoxpk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
